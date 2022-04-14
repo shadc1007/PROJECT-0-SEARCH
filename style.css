@@ -10,19 +10,27 @@ body {
 }
 .main-container {
     display: flex;
-    font-size: 15px;
-}
-.header {
-    position: absolute;
-    right: 0;
+    flex-direction: column;
 }
 .header ul {
     display: flex;
+    float: right;
 }
 .header li a {
     color: black;
     padding: 1rem;
-    display: inline-block;
+    display: block;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 11%;
+}
+.content img {
+    height: 100px;
 }
 a:hover {
     text-decoration: underline;
